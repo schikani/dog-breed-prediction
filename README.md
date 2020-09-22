@@ -1,9 +1,18 @@
 ![alt text](Readme.md-images/dog-paws.png)
 # dog-breed-prediction
 
-## dog-breed-prediction is a Deep learning project which uses neural networks to determine the breed of a dog in a given image.
+### dog-breed-prediction is a Deep learning project which uses neural networks to determine the breed of a dog in a given image.
 
-### Screenshots of the GUI and Terminal apps taken in Ubuntu 20.04
+## Installation
+* `$ mkdir dog-breed-prediction-base`
+* `$ cd dog-breed-prediction-base`
+* `$ virtualenv ./venv`
+* `$ source ./venv/bin/activate`
+* `$ git clone https://github.com/schikani/dog-breed-prediction.git`
+* `$ cd dog-breed-prediction`
+* `$ pip install -r requirements.txt`
+
+### Currently this project is tested in Ubuntu 20.04 but hopefully it should work in Mac and Windows sytems too.
 
 ### 1. GUI app
 #### This is the GUI version of dog-breed-prediction 
@@ -21,8 +30,7 @@
 
 ### 2. Terminal app
 
-#### This is the terminal version of dog-breed-prediction 
-#### From this project's root folder: 
+#### This is the terminal version of dog-breed-prediction  
 * #### Run `$ python dog_breed_prediction_term.py custom-image.jpg`, Here instead of `custom-image.jpg`, type the path of an image you want to predict. 
 #### If everything works fine, you should see a similar result like shown below.
 ![alt text](Readme.md-images/top3-preds-term-screenshot.png)

@@ -81,7 +81,7 @@ def load_model(model_path):
 
 def pred_prob_labels(prediction_probabilities, labels):
     """
-    Plus the top 3 highest prediction confidences along with the truth label for sample n.
+    Top 3 highest prediction confidences along with the truth label for sample n.
     """
     pred_prob, true_label = prediction_probabilities[0], labels[0]
 
@@ -94,7 +94,7 @@ def pred_prob_labels(prediction_probabilities, labels):
     # Find the top 3 prediction confidence values
     top_3_pred_values = pred_prob[top_3_pred_indexes]
 
-    # Convert confidence value to percentage
+    # Convert confidence values to percentage
     confidence_in_percentage = [np.max(i) * 100 for i in top_3_pred_values]
 
     # Clear the lists
